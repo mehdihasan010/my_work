@@ -1,0 +1,49 @@
+name: assignment_1
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  carousel_slider: ^5.0.0
+  flutter_svg: ^2.0.16
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+    - family: Akatab
+      fonts:
+        - asset: assets/fonts/Akatab-Regular.ttf
+          weight: 400
+
+flutter_assets:
+  assets_path:
+    - assets/images/
+    - assets/icons/
+  output_path: lib/app/
+  filename: app_assets.dart
+  field_prefix:
+  classname: AppAssets
